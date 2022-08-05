@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.blog-layout {
+  background-color: orange;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
