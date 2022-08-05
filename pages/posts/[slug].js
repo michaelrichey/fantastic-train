@@ -35,10 +35,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
   );
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
-
-  const date = JSON.stringify(frontMatter.date);
-  const dateString = date.split("T")[0].replace('"', "");
-  frontMatter.date = dateString;
+  frontMatter.date = "2022-01-02";
 
   const mdxSource = await serialize(content);
 
